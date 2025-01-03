@@ -976,6 +976,7 @@ GameObject:
   - component: {fileID: 1120569305}
   - component: {fileID: 1120569304}
   - component: {fileID: 1120569307}
+  - component: {fileID: 1120569308}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1046,6 +1047,50 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimeBetweenEvents: 90
+--- !u!114 &1120569308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1120569303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 291ed4d670fcdc84196e2628248e824a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parties:
+  - partyName: "\u0426\u0435\u043D\u0442\u0440\u0438\u0441\u0442\u044B"
+    partyPopularity: 35
+    isPartyRuling: 1
+    subParties:
+    - subPartyName: "\u041A\u043E\u043D\u0441\u0435\u0440\u0432\u0430\u0442\u043E\u0440\u044B"
+      subPartyPopularity: 35
+      isSubPartyRuling: 1
+  - partyName: "\u041D\u0430\u0446\u0438\u043E\u043D\u0430\u043B\u0438\u0441\u0442\u044B"
+    partyPopularity: 40
+    isPartyRuling: 0
+    subParties: []
+  - partyName: "\u0421\u043E\u0446\u0438\u0430\u043B\u0438\u0441\u0442\u044B"
+    partyPopularity: 10
+    isPartyRuling: 0
+    subParties: []
+  - partyName: "\u041C\u043E\u043D\u0430\u0440\u0445\u0438\u0441\u0442\u044B"
+    partyPopularity: 9
+    isPartyRuling: 0
+    subParties: []
+  - partyName: "\u0410\u043D\u0430\u0440\u0445\u0438\u0441\u0442\u044B"
+    partyPopularity: 1
+    isPartyRuling: 0
+    subParties: []
+  - partyName: "\u0412\u043E\u0435\u043D\u043D\u044B\u0435"
+    partyPopularity: 3
+    isPartyRuling: 0
+    subParties: []
+  - partyName: "\u041E\u0440\u0434\u0435\u043D"
+    partyPopularity: 2
+    isPartyRuling: 0
+    subParties: []
 --- !u!1 &1494930883
 GameObject:
   m_ObjectHideFlags: 0
