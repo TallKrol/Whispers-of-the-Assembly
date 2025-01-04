@@ -41,19 +41,27 @@ public class TimeManager : MonoBehaviour
         }
     }
 
-    void Update()
+    public void PauseTime()
     {
-        if (Input.GetKeyDown(KeyCode.Space) & Time.timeScale == 1)
+        if (Time.timeScale == 1)
         {
             Time.timeScale = 0;
             Debug.Log('0');
         }
-        else if (Input.GetKeyDown(KeyCode.Space) & Time.timeScale == 0)
+        else if (Time.timeScale == 0)
         {
             Time.timeScale = 1;
             Debug.Log('1');
         }
 
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            PauseTime();
+        }
         if (_timeEvent == TimeBetweenEvents)
         {
             _timeEvent = 0;
